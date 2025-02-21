@@ -8,7 +8,7 @@ MIT
 
 ## Introduction
 
-This documentation outlines the process for integrating ERPNext with the BioTime system to fetch check-in data from the BioTime system. This integration will require the BioTime URL and a JWT token for authentication. Additionally, a field, "Attendance Device ID (Biometric/RF tag ID)," is used to map check-ins from the device with the employee list. To avoid duplicate transactions, a "Transaction ID" field is added to the Chicken DocType. Check-ins will be fetched daily at midnight.
+This documentation outlines the process for integrating ERPNext with the BioTime system to fetch check-in data from the BioTime system. This integration will require the BioTime URL. Additionally, a field, "Attendance Device ID (Biometric/RF tag ID)," is used to map check-ins from the device with the employee list. To avoid duplicate transactions, a "Transaction ID" field is added to the Chicken DocType. Check-ins will be fetched daily at midnight.
 
 ![Alt text](image.png)
 
@@ -19,11 +19,9 @@ Before proceeding with the integration, ensure the following prerequisites are m
     Access to BioTime: You must have access to the BioTime system, including the BioTime URL and a valid JWT token for authentication.
 
 ## Integration Steps
-1. BioTime URL and JWT Token
+1. BioTime URL.
 
     BioTime URL: The BioTime URL is the base URL of the BioTime system where the API endpoints are hosted.
-
-    JWT Token: You'll need a JWT (JSON Web Token) for authentication. This token should be obtained from the BioTime system. Make sure the token has the necessary permissions to access the required data.
 
 
     2. Custom Field Setup
